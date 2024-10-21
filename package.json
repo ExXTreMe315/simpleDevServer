@@ -11,7 +11,6 @@
     "tsc": "cd resources && tsc",
     "copy": "copyfiles resources/**/src/**/* --exclude=**/*.ts --up 3 ./dist",
     "uglify": "uglifyjs-folder dist -e -x .js -o resources/**/dist"
-
   },
   "repository": {
     "type": "git",
@@ -27,9 +26,14 @@
   },
   "homepage": "https://github.com/ExXTreMe315/simpleDevServer#readme",
   "devDependencies": {
-    "typescript": "^5.6.3",
+    "@altv/types-client": "^16.2.7",
+    "@altv/types-natives": "^16.2.1",
+    "@altv/types-server": "^16.2.5",
+    "@altv/types-shared": "^16.2.4",
+    "@altv/types-webview": "^16.2.1",
     "copyfiles": "^2.4.1",
     "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
     "uglifyjs-folder": "^3.3.0"
   }
 }
