@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es5",
+      "es6",
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "rootDir": ".",
+    "outDir": ".",
+    "typeRoots": [
+      "./node_modules/@altv"
+    ]
+  },
+  "compileOnSave": true,
+  "include": [
+    "resources/**/tsconfig.json"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "removeComments": true
+}
