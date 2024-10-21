@@ -1,0 +1,22 @@
+{
+  "name": "simpledevserver",
+  "version": "1.0.0",
+  "description": "Simple Alt:V Development Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "./altv-server.exe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExXTreMe315/simpleDevServer.git"
+  },
+  "keywords": [
+    "alt:v"
+  ],
+  "author": "ExXTreMe315",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExXTreMe315/simpleDevServer/issues"
+  },
+  "homepage": "https://github.com/ExXTreMe315/simpleDevServer#readme"
+}
