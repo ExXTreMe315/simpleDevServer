@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "npm run clean && tsc && npm run uglify",
+    "clean": "rimraf --glob resources/**/dist/*",
+    "uglify": "uglifyjs-folder ./resources/**/dist -e -x .js -o .resources/**/dist"
+  }
+}

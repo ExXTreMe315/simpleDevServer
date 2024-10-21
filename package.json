@@ -2,14 +2,10 @@
   "name": "simpledevserver",
   "version": "1.0.0",
   "description": "Simple Alt:V Development Server",
-  "main": "index.js",
   "scripts": {
-    "start": "npm run build && parseToml && .\\altv-server.exe",
-    "start:dev": "npm run build && .\\altv-server.exe --config .\\server.dev.toml",
-    "build": "npm run init && npm run clean && tsc && npm run uglify",
+    "start": "npm run init && parseToml && .\\altv-server.exe",
+    "start:dev": "npm run init && .\\altv-server.exe --config .\\server.dev.toml",
     "init": "npx altv-pkg release",
-    "clean": "rimraf --glob resources/**/dist/*",
-    "uglify": "uglifyjs-folder ./resources/**/dist -e -x .js -o .resources/**/dist",
     "parseToml": "node tomlParser.js"
   },
   "repository": {
