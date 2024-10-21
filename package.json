@@ -4,13 +4,13 @@
   "description": "Simple Alt:V Development Server",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && ./altv-server.exe",
-    "build": "npm run init && npm run clean && npm run tsc && npm run copy && npm run uglify",
+    "start": "npm run build && parseToml && .\\altv-server.exe",
+    "start:dev": "npm run build && .\\altv-server.exe --config .\\server.dev.toml",
+    "build": "npm run init && npm run clean && tsc && npm run uglify",
     "init": "npx altv-pkg release",
-    "clean": "rimraf resources/**/dist/*",
-    "tsc": "cd resources && tsc",
-    "copy": "copyfiles resources/**/src/**/* --exclude=**/*.ts --up 3 ./dist",
-    "uglify": "uglifyjs-folder dist -e -x .js -o resources/**/dist"
+    "clean": "rimraf --glob resources/**/dist/*",
+    "uglify": "uglifyjs-folder ./resources/**/dist -e -x .js -o .resources/**/dist",
+    "parseToml": "node tomlParser.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   ],
   "author": "ExXTreMe315",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ExXTreMe315/simpleDevServer/issues"
   },
