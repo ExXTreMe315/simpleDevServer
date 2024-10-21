@@ -1,0 +1,39 @@
+{
+  "fileConfig": {
+    "resourcesPath": "resources/",
+    "tomlName": "server",
+    "subFolderPrefix": "_",
+    "dependencies": [],
+    "lastResource": []
+  },
+  "tomlConfig": {
+    "announce": true,
+    "announceRetryErrorAttempts": 50,
+    "announceRetryErrorDelay": 10000,
+    "cdnUrl": "https://my.cdn.com",
+    "debug": false,
+    "gamemode": "Development",
+    "host": "0.0.0.0",
+    "language": "de",
+    "modules": [
+      "js-module"
+    ],
+    "name": "simpleDevServer",
+    "players": 404,
+    "port": 7788,
+    "streamingDistance": 350,
+    "tags": [
+      "WIP",
+      "DEV",
+      "simpleDevServer"
+    ],
+    "hashClientResourceName": true,
+    "description": "Development Server made with simpleDevServer",
+    "password": "myStrongPassword",
+    "token": "",
+    "useCdn": false,
+    "website": "https://github.com/ExXTreMe315/simpleDevServer",
+    "enableSyncedMetaData": true,
+    "newSync": true
+  }
+}
