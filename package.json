@@ -4,7 +4,8 @@
   "description": "Simple Alt:V Development Server",
   "main": "index.js",
   "scripts": {
-    "test": "./altv-server.exe"
+    "init": "npx altv-pkg release",
+    "start": "./altv-server.exe"
   },
   "repository": {
     "type": "git",
