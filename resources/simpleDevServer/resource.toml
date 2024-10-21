@@ -1,4 +1,7 @@
-client-files = ['dist/client/*']
+client-files = [
+    'dist/client/*',
+    'dist/shared/*'
+]
 client-main = 'dist/client/startup.js'
 deps = []
 main = 'dist/server/startup.js'
