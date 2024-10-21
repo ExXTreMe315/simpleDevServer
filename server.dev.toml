@@ -1,0 +1,18 @@
+announce = false
+debug = true
+description = 'Development Server made with simpleDevServer'
+gamemode = 'Development'
+host = '0.0.0.0'
+language = 'de'
+modules = ['js-module']
+name = 'simpleDevServer'
+useCdn = false
+cdnUrl = "https://my.cdn.com"
+players = 32
+password = 'myStrongDevPassword'
+port = 7789
+resources = [
+    'simpleDevServer'
+]
+token = 'myToken'
+website = 'https://github.com/ExXTreMe315/simpleDevServer'

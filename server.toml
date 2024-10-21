@@ -1,0 +1,26 @@
+#This toml was created by Alt:V-TomlParser
+announceRetryErrorDelay = 10000
+announce = true
+announceRetryErrorAttempts = 50
+cdnUrl = "https://my.cdn.com"
+gamemode = "Development"
+language = "de"
+host = "0.0.0.0"
+modules = ["js-module"]
+players = 404
+name = "simpleDevServer"
+port = 7788
+debug = false
+tags = ["WIP", "DEV", "simpleDevServer"]
+description = "Development Server made with simpleDevServer"
+streamingDistance = 350
+password = "myStrongPassword"
+hashClientResourceName = true
+website = "https://github.com/ExXTreMe315/simpleDevServer"
+token = ""
+useCdn = false
+enableSyncedMetaData = true
+resources = [
+    "simpleDevServer"
+]
+newSync = true
