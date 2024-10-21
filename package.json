@@ -4,8 +4,14 @@
   "description": "Simple Alt:V Development Server",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && ./altv-server.exe",
+    "build": "npm run init && npm run clean && npm run tsc && npm run copy && npm run uglify",
     "init": "npx altv-pkg release",
-    "start": "./altv-server.exe"
+    "clean": "rimraf resources/**/dist/*",
+    "tsc": "cd resources && tsc",
+    "copy": "copyfiles resources/**/src/**/* --exclude=**/*.ts --up 3 ./dist",
+    "uglify": "uglifyjs-folder dist -e -x .js -o resources/**/dist"
+
   },
   "repository": {
     "type": "git",
@@ -19,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/ExXTreMe315/simpleDevServer/issues"
   },
-  "homepage": "https://github.com/ExXTreMe315/simpleDevServer#readme"
+  "homepage": "https://github.com/ExXTreMe315/simpleDevServer#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1",
+    "uglifyjs-folder": "^3.3.0"
+  }
 }
